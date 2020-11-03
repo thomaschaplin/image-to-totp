@@ -5,6 +5,7 @@
     "main": "build/index.js",
     "scripts": {
         "test": "jest",
+        "test:coverage": "jest --coverage",
         "build": "rimraf ./build && tsc",
         "watch": "rimraf ./build && tsc --watch",
         "start": "node build/index.js",
