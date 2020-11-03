@@ -5,7 +5,7 @@ const test = async (account: string) => {
     const projectBaseFolder = path.join(__dirname, '../')
     const imagesFolder = path.join(projectBaseFolder, 'src/images')
     const totp = await generateTotpFromFile(`${imagesFolder}/${account}.png`)
-    console.log(totp)
+    console.log(`Account: ${account} - ${totp}`)
 }
 
 test('example1')
