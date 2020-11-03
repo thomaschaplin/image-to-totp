@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./build",
+        "allowJs": false,
+        "module": "commonjs",
+        "target": "es5",
+        "lib": ["es2018", "es2015", "es6", "es2015.promise", "dom"],
+        "strict": false,
+        "declaration": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "types": ["node", "jest"],
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "downlevelIteration": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["./node_modules", "./build", ".commitlintrc.js"]
+}

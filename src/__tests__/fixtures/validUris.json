@@ -1,0 +1,89 @@
+[
+    [
+        "otpauth://totp/Example:alice@google.com?secret=JBSWY3DPEHPK3PXP&issuer=Example",
+        {
+            "fullUri": "otpauth://totp/Example:alice@google.com?secret=JBSWY3DPEHPK3PXP&issuer=Example",
+            "type": "totp",
+            "label": {
+                "issuer": "Example",
+                "account": "alice@google.com"
+            },
+            "query": {
+                "secret": "JBSWY3DPEHPK3PXP",
+                "issuer": "Example"
+            }
+        }
+    ],
+    [
+        "otpauth://totp/ACME%20Co:john.doe@email.com?secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&issuer=ACME%20Co&algorithm=SHA1&digits=6&period=30",
+        {
+            "fullUri": "otpauth://totp/ACME%20Co:john.doe@email.com?secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&issuer=ACME%20Co&algorithm=SHA1&digits=6&period=30",
+            "type": "totp",
+            "label": {
+                "issuer": "ACME Co",
+                "account": "john.doe@email.com"
+            },
+            "query": {
+                "secret": "HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ",
+                "issuer": "ACME Co",
+                "algorithm": "SHA1",
+                "digits": "6",
+                "period": "30"
+            }
+        }
+    ],
+    [
+        "otpauth://TYPE/LABEL?PARAMETERS",
+        {
+            "fullUri": "otpauth://TYPE/LABEL?PARAMETERS",
+            "type": "type",
+            "label": {
+                "issuer": "",
+                "account": "LABEL"
+            },
+            "query": {
+                "PARAMETERS": ""
+            }
+        }
+    ],
+    [
+        "otpauth://HTOP/Account-Name?secret=shhhh",
+        {
+            "fullUri": "otpauth://HTOP/Account-Name?secret=shhhh",
+            "type": "htop",
+            "label": {
+                "issuer": "",
+                "account": "Account-Name"
+            },
+            "query": {
+                "secret": "shhhh"
+            }
+        }
+    ],
+    [
+        "otpauth://topt/Big%20Corporation%3A%20alice%40bigco.com?secret=shhhh",
+        {
+            "fullUri": "otpauth://topt/Big%20Corporation%3A%20alice%40bigco.com?secret=shhhh",
+            "type": "topt",
+            "label": {
+                "issuer": "Big Corporation",
+                "account": "alice@bigco.com"
+            },
+            "query": {
+                "secret": "shhhh"
+            }
+        }
+    ],
+    [
+        "otpauth://topt/Big%20Corporation%3A%20alice%40bigco.com",
+        {
+            "fullUri": "otpauth://topt/Big%20Corporation%3A%20alice%40bigco.com",
+            "type": "topt",
+            "label": {
+                "issuer": "Big Corporation",
+                "account": "alice@bigco.com"
+            },
+            "query": {}
+        }
+    ]
+]

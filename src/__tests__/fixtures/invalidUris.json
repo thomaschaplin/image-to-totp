@@ -1,0 +1,10 @@
+[
+    [
+        "otpauth://topt/",
+        "Cannot parse the provided uri \"otpauth://topt/\". The provided uri does not pass the regex criteria."
+    ],
+    [
+        "short",
+        "Cannot parse the provided uri \"short\". The provided uri does not meet the minimum length criteria. We received a length of \"5\" but were expecting a length greater than \"7\"."
+    ]
+]
