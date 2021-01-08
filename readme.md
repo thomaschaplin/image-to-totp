@@ -1,6 +1,8 @@
+<img src="assets/logo.png" alt="logo" width="213" height="213" />
+
 # authy-clone
 
-Authy clone written in [TypeScript](https://www.typescriptlang.org/)
+Authy clone written in [TypeScript](https://www.typescriptlang.org/ =320x320)
 
 ## Description
 
@@ -79,3 +81,5 @@ Tests:       17 passed, 17 total
 Snapshots:   0 total
 Time:        1.986 s, estimated 2 s
 ```
+
+Image by <a href="https://pixabay.com/users/mohamed_hassan-5229782/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5661868">mohamed Hassan</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5661868">Pixabay</a>
