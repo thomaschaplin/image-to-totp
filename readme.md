@@ -2,7 +2,7 @@
 
 # authy-clone
 
-Authy clone written in [TypeScript](https://www.typescriptlang.org/ =320x320)
+Authy clone written in [TypeScript](https://www.typescriptlang.org/)
 
 ## Description
 
@@ -10,10 +10,10 @@ This repository is a clone of the popular authy application used to generate 2FA
 
 This project uses:
 
-* jest
-* jimp
-* jsqr
-* otpauth
+* [jest](https://jestjs.io/)
+* [jimp](https://github.com/oliver-moran/jimp)
+* [jsqr](https://github.com/cozmo/jsQR)
+* [otpauth](https://github.com/hectorm/otpauth)
 
 ## Setup
 
