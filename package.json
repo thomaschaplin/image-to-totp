@@ -1,7 +1,7 @@
 {
-    "name": "authy-clone",
+    "name": "eknot",
     "version": "1.0.0",
-    "description": "An authy clone",
+    "description": "eknot is a simple two-factor authentication solution",
     "main": "build/index.js",
     "scripts": {
         "test": "jest",
@@ -15,7 +15,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/thomaschaplin/authy-clone"
+        "url": "https://github.com/thomaschaplin/eknot"
     },
     "keywords": [
         "typescript",

@@ -1,12 +1,4 @@
-import {generateTotpFromFile} from './generateTotpFromFile'
-import * as path from 'path'
-
-const test = async (account: string) => {
-    const projectBaseFolder = path.join(__dirname, '../')
-    const imagesFolder = path.join(projectBaseFolder, 'src/images')
-    const totp = await generateTotpFromFile(`${imagesFolder}/${account}.png`)
-    console.log(`Account: ${account} - ${totp}`)
-}
-
-test('example1')
-test('example2')
+export {generateTotpFromFile} from './generateTotpFromFile'
+export {generateTotpFromParsedQrCode} from './generateTotpFromParsedQrCode'
+export {parseQrCode} from './parseQrCode'
+export {parseTotpUri} from './parseTotpUri'
