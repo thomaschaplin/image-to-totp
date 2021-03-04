@@ -10,6 +10,23 @@ eknot is a [Node.js](https://nodejs.org/en/) library to generate totp codes with
 npm i -D eknot
 ```
 
+### Example Usage
+
+```ts
+import {generateTotpFromFile} from 'eknot'
+import * as path from 'path'
+
+const example = async (account: string) => {
+    const projectBaseFolder = path.join(__dirname, '../')
+    const imagesFolder = path.join(projectBaseFolder, 'examples/images')
+    const totp = await generateTotpFromFile(`${imagesFolder}/${account}.png`)
+    console.log(`Account: ${account} - ${totp}`)
+}
+
+example('example1')
+example('example2')
+```
+
 ## Description
 
 This repository is a clone of the popular authy application used to generate 2FA codes.

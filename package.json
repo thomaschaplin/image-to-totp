@@ -1,12 +1,13 @@
 {
     "name": "eknot",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "eknot is a simple two-factor authentication solution",
     "main": "build/index.js",
     "files": [
         "build",
         "LICENSE",
-        "readme.md"
+        "readme.md",
+        "assets/logo.png"
     ],
     "scripts": {
         "test": "jest",
