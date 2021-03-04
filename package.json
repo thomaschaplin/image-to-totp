@@ -3,6 +3,11 @@
     "version": "1.0.0",
     "description": "eknot is a simple two-factor authentication solution",
     "main": "build/index.js",
+    "files": [
+        "build",
+        "LICENSE",
+        "readme.md"
+    ],
     "scripts": {
         "test": "jest",
         "test:coverage": "jest --coverage",
@@ -17,17 +22,15 @@
         "type": "git",
         "url": "https://github.com/thomaschaplin/eknot"
     },
+    "bugs": {
+        "url": "https://github.com/thomaschaplin/eknot/issues"
+    },
+    "homepage": "https://github.com/thomaschaplin/eknot#readme",
     "keywords": [
-        "typescript",
-        "husky",
-        "git cz",
-        "prettier",
-        "eslint",
-        "commitlint",
-        "lint-staged"
+        "typescript"
     ],
     "author": "Thomas Chaplin <thomaschaplin@outlook.com>",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "@commitlint/cli": "^11.0.0",
         "@commitlint/config-conventional": "^11.0.0",
@@ -41,11 +44,11 @@
         "lint-staged": "^10.0.8",
         "prettier": "^2.0.0",
         "rimraf": "^3.0.2",
-        "typescript": "^3.8.3"
+        "typescript": "^3.8.3",
+        "@types/jest": "^26.0.0",
+        "jest": "^26.0.1"
     },
     "dependencies": {
-        "@types/jest": "^26.0.0",
-        "jest": "^26.0.1",
         "jimp": "^0.10.3",
         "jsqr": "^1.3.1",
         "otpauth": "^5.0.9"
