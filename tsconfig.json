@@ -15,5 +15,5 @@
         "downlevelIteration": true
     },
     "include": ["src/**/*"],
-    "exclude": ["./node_modules", "./build", ".commitlintrc.js"]
+    "exclude": ["./node_modules", "./build"]
 }
