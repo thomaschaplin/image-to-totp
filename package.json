@@ -1,6 +1,6 @@
 {
     "name": "eknot",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "eknot is a simple two-factor authentication solution",
     "main": "build/index.js",
     "files": [
