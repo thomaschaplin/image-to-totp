@@ -23,8 +23,8 @@ const example = async (account: string) => {
     console.log(`Account: ${account} - ${totp}`)
 }
 
-example('example1')
-example('example2')
+example('example1') // Account: example1 - 034624
+example('example2') // Account: example2 - 084841
 ```
 
 ## Description
