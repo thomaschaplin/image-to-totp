@@ -1,6 +1,6 @@
 {
     "name": "eknot",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "eknot is a simple two-factor authentication solution",
     "main": "build/index.js",
     "files": [
@@ -28,7 +28,16 @@
     },
     "homepage": "https://github.com/thomaschaplin/eknot#readme",
     "keywords": [
-        "typescript"
+        "thomaschaplin",
+        "thomas",
+        "chaplin",
+        "authy",
+        "2FA",
+        "eknot",
+        "two-fa",
+        "two-factor",
+        "totp",
+        "qr-code"
     ],
     "author": "Thomas Chaplin <thomaschaplin@outlook.com>",
     "license": "MIT",
