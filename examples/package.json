@@ -1,0 +1,21 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "### Generate a TOTP code from a QR code image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./build && tsc",
+    "watch": "rm -rf./build && tsc --watch",
+    "start": "node build/image-to-totp.js"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@thomaschaplin/image-to-totp": "../"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

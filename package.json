@@ -1,6 +1,6 @@
 {
     "name": "@thomaschaplin/image-to-totp",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "description": "image-to-totp converts qr code images to totp codes",
     "main": "build/index.js",
     "files": [
@@ -10,14 +10,11 @@
         "assets/logo.png"
     ],
     "scripts": {
-        "test": "jest",
-        "test:coverage": "jest --coverage",
-        "build": "rimraf ./build && tsc",
-        "watch": "rimraf ./build && tsc --watch",
-        "start": "node build/index.js",
-        "lint": "eslint 'src/**/*.ts' --fix",
-        "format": "prettier --config .prettierrc . --write",
-        "commit": "npx git-cz"
+        "test": "jest --runInBand",
+        "test:coverage": "jest --runInBand --coverage",
+        "build": "rm -rf ./build && tsc",
+        "watch": "rm -rf ./build && tsc --watch",
+        "start": "node build/index.js"
     },
     "repository": {
         "type": "git",
@@ -42,12 +39,13 @@
     "author": "Thomas Chaplin <thomaschaplin@outlook.com>",
     "license": "MIT",
     "devDependencies": {
+        "@types/jest": "^26.0.0",
         "@types/node": "^13.9.2",
         "husky": "^4.2.3",
-        "rimraf": "^3.0.2",
+        "jest": "^26.0.1",
+        "kelonio": "^0.6.0",
         "typescript": "^3.8.3",
-        "@types/jest": "^26.0.0",
-        "jest": "^26.0.1"
+        "ts-jest": "^26.5.3"
     },
     "dependencies": {
         "jimp": "^0.10.3",

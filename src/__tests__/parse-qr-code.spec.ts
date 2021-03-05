@@ -1,5 +1,6 @@
 import { parseQrCode } from "../parse-qr-code";
 import * as path from "path";
+import { benchmark } from "kelonio";
 
 describe("Parse QR code", () => {
   const projectBaseFolder = path.join(__dirname, "../../");
@@ -22,6 +23,17 @@ describe("Parse QR code", () => {
       },
       query: { secret: "secret", issuer: "issuer" },
     });
+  });
+
+  it("performance", async () => {
+    await benchmark.record(
+      [
+        "parse-qr-code",
+        "should parse valid totp qr code",
+      ],
+      async () => await parseQrCode(validTotpQrCode),
+      { meanUnder: 25 },
+    );
   });
 
   it("should throw an error when parsing a totp qr code which does not exist", async () => {
