@@ -1,6 +1,6 @@
 {
     "name": "@thomaschaplin/image-to-totp",
-    "version": "2.0.6",
+    "version": "2.1.0",
     "description": "image-to-totp converts qr code images to totp codes",
     "main": "build/index.js",
     "files": [
@@ -13,8 +13,7 @@
         "test": "jest --runInBand",
         "test:coverage": "jest --runInBand --coverage",
         "build": "rm -rf ./build && tsc",
-        "watch": "rm -rf ./build && tsc --watch",
-        "start": "node build/index.js"
+        "watch": "rm -rf ./build && tsc --watch"
     },
     "repository": {
         "type": "git",
@@ -40,12 +39,12 @@
     "license": "MIT",
     "devDependencies": {
         "@types/jest": "^26.0.0",
-        "@types/node": "^13.9.2",
-        "husky": "^4.2.3",
+        "@types/node": "^13.13.45",
+        "husky": "^4.3.8",
         "jest": "^26.0.1",
         "kelonio": "^0.6.0",
-        "typescript": "^3.8.3",
-        "ts-jest": "^26.5.3"
+        "ts-jest": "^26.5.3",
+        "typescript": "^3.9.9"
     },
     "dependencies": {
         "jimp": "^0.10.3",
