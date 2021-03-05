@@ -2,6 +2,10 @@
 
 # image-to-totp
 
+![](https://img.shields.io/npm/dw/@thomaschaplin/image-to-totp)
+![](https://img.shields.io/github/license/thomaschaplin/image-to-totp)
+![](https://img.shields.io/bundlephobia/min/@thomaschaplin/image-to-top)
+
 image-to-totp is a library to generate totp codes from a QR code image with a single API.
 
 ## Usage
