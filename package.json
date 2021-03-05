@@ -1,6 +1,6 @@
 {
     "name": "@thomaschaplin/image-to-totp",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "image-to-totp converts qr code images to totp codes",
     "main": "build/index.js",
     "files": [
