@@ -1,7 +1,7 @@
-import { parseQrCode } from "./parseQrCode";
-import { generateTotpFromParsedQrCode } from "./generateTotpFromParsedQrCode";
+import { parseQrCode } from "./parse-qr-code";
+import { generateTotpFromParsedQrCode } from "./parsed-qr-code-to-totp";
 
-export const generateTotpFromFile = async (
+export const imageToTotp = async (
   filePath: string,
 ): Promise<string> => {
   const parsedQrCode = await parseQrCode(filePath);

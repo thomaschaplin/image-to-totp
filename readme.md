@@ -1,41 +1,43 @@
 <img src="assets/logo.png" alt="logo" width="213" height="213" />
 
-# eknot
+# image-to-totp
 
-eknot is a [Node.js](https://nodejs.org/en/) library to generate totp codes with a single API.
+image-to-totp is a [Node.js](https://nodejs.org/en/) library to generate totp
+codes with a single API.
 
 ## Usage
 
 ```
-npm i -D eknot
+npm install @thomaschaplin/image-to-totp
 ```
 
 ### Example Usage
 
 ```ts
-import {generateTotpFromFile} from 'eknot'
-import * as path from 'path'
+import { generateTotpFromFile } from "@thomaschaplin/image-to-totp";
+import * as path from "path";
 
 const example = async (account: string) => {
-    const projectBaseFolder = path.join(__dirname, '../')
-    const imagesFolder = path.join(projectBaseFolder, 'examples/images')
-    const totp = await generateTotpFromFile(`${imagesFolder}/${account}.png`)
-    console.log(`Account: ${account} - ${totp}`)
-}
+  const projectBaseFolder = path.join(__dirname, "../");
+  const imagesFolder = path.join(projectBaseFolder, "examples/images");
+  const totp = await generateTotpFromFile(`${imagesFolder}/${account}.png`);
+  console.log(`Account: ${account} - ${totp}`);
+};
 
-example('example1') // Account: example1 - 034624
-example('example2') // Account: example2 - 084841
+example("example1"); // Account: example1 - 034624
+example("example2"); // Account: example2 - 084841
 ```
 
 ## Description
 
-This repository is a clone of the popular authy application used to generate 2FA codes.
+This repository is a clone of the popular authy application used to generate 2FA
+codes.
 
 This project uses:
 
--   [jimp](https://github.com/oliver-moran/jimp)
--   [jsqr](https://github.com/cozmo/jsQR)
--   [otpauth](https://github.com/hectorm/otpauth)
+- [jimp](https://github.com/oliver-moran/jimp)
+- [jsqr](https://github.com/cozmo/jsQR)
+- [otpauth](https://github.com/hectorm/otpauth)
 
 ## Setup
 
@@ -45,16 +47,20 @@ Make sure you have [Node.js](https://nodejs.org/en/) installed on your machine
 
 #### Installation
 
--   Clone this repository `git clone git@github.com:thomaschaplin/eknot.git`
--   Change directory `cd eknot`
--   Install the dependencies `npm install`
--   Transpile the code `npm run build` or `npm run watch`
+- Clone this repository
+  `git clone git@github.com:thomaschaplin/image-to-totp.git`
+- Change directory `cd image-to-totp`
+- Install the dependencies `npm install`
+- Transpile the code `npm run build` or `npm run watch`
 
 #### Tests
 
--   Run the tests `npm test`
--   Run the tests with coverage `npm test:coverage`
+- Run the tests `npm test`
+- Run the tests with coverage `npm test:coverage`
 
 ---
 
-Image by <a href="https://pixabay.com/users/mohamed_hassan-5229782/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5661868">mohamed Hassan</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5661868">Pixabay</a>
+Image by
+<a href="https://pixabay.com/users/mohamed_hassan-5229782/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5661868">mohamed
+Hassan</a> from
+<a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5661868">Pixabay</a>

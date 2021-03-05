@@ -1,6 +1,6 @@
-import { parseTotpUri } from "../parseTotpUri";
-import * as validUris from "./fixtures/validUris.json";
-import * as invalidUris from "./fixtures/invalidUris.json";
+import { parseTotpUri } from "../parse-totp-uri";
+import * as validUris from "./fixtures/valid-uris.json";
+import * as invalidUris from "./fixtures/invalid-uris.json";
 
 describe("Parse totp uri", () => {
   validUris.forEach(([uri, expected]) => {

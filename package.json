@@ -1,7 +1,7 @@
 {
-    "name": "eknot",
-    "version": "1.0.6",
-    "description": "eknot is a simple two-factor authentication solution",
+    "name": "@thomaschaplin/image-to-totp",
+    "version": "2.0.0",
+    "description": "image-to-totp converts qr code images to totp codes",
     "main": "build/index.js",
     "files": [
         "build",
@@ -21,19 +21,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/thomaschaplin/eknot"
+        "url": "https://github.com/thomaschaplin/image-to-totp"
     },
     "bugs": {
-        "url": "https://github.com/thomaschaplin/eknot/issues"
+        "url": "https://github.com/thomaschaplin/image-to-totp/issues"
     },
-    "homepage": "https://github.com/thomaschaplin/eknot#readme",
+    "homepage": "https://github.com/thomaschaplin/image-to-totp#readme",
     "keywords": [
         "thomaschaplin",
         "thomas",
         "chaplin",
         "authy",
         "2FA",
-        "eknot",
+        "image-to-totp",
         "two-fa",
         "two-factor",
         "totp",

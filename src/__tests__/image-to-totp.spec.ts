@@ -1,4 +1,4 @@
-import { generateTotpFromFile } from "../generateTotpFromFile";
+import { imageToTotp } from "../image-to-totp";
 import * as path from "path";
 
 describe("Generate totp from file", () => {
@@ -8,7 +8,7 @@ describe("Generate totp from file", () => {
       projectBaseFolder,
       "src/__tests__/fixtures",
     );
-    const totp = await generateTotpFromFile(`${fixturesFolder}/2fa.png`);
+    const totp = await imageToTotp(`${fixturesFolder}/2fa.png`);
     expect(typeof totp).toBe("string");
     expect(totp).toHaveLength(6);
   });

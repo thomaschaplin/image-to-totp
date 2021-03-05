@@ -2,11 +2,7 @@ import jsqr from "jsqr";
 import * as jimp from "jimp";
 import { existsSync, readFileSync } from "fs";
 // eslint-disable-next-line no-unused-vars
-import { parseTotpUri, Totp } from "./parseTotpUri";
-
-type Value = {
-  result: string;
-};
+import { parseTotpUri, Totp } from "./parse-totp-uri";
 
 export const parseQrCode = (filePath: string): Promise<Totp> => {
   if (!existsSync(filePath)) {

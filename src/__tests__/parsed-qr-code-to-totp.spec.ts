@@ -1,6 +1,6 @@
-import { parseTotpUri } from "../parseTotpUri";
-import { generateTotpFromParsedQrCode } from "../generateTotpFromParsedQrCode";
-import * as validUris from "./fixtures/validUris.json";
+import { parseTotpUri } from "../parse-totp-uri";
+import { generateTotpFromParsedQrCode } from "../parsed-qr-code-to-totp";
+import * as validUris from "./fixtures/valid-uris.json";
 
 describe("Generate totp from parsed qr code", () => {
   validUris.forEach(([uri]) => {

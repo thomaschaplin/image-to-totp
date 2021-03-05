@@ -1,4 +1,4 @@
-import { parseQrCode } from "../parseQrCode";
+import { parseQrCode } from "../parse-qr-code";
 import * as path from "path";
 
 describe("Parse QR code", () => {
