@@ -13,13 +13,13 @@ npm install @thomaschaplin/image-to-totp
 ### Example Usage
 
 ```ts
-import { generateTotpFromFile } from "@thomaschaplin/image-to-totp";
+import { imageToTotp } from "@thomaschaplin/image-to-totp";
 import * as path from "path";
 
 const example = async (account: string) => {
   const projectBaseFolder = path.join(__dirname, "../");
   const imagesFolder = path.join(projectBaseFolder, "examples/images");
-  const totp = await generateTotpFromFile(`${imagesFolder}/${account}.png`);
+  const totp = await imageToTotp(`${imagesFolder}/${account}.png`);
   console.log(`Account: ${account} - ${totp}`);
 };
 
