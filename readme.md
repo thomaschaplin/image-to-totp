@@ -2,8 +2,7 @@
 
 # image-to-totp
 
-image-to-totp is a [Node.js](https://nodejs.org/en/) library to generate totp
-codes with a single API.
+image-to-totp is a library to generate totp codes from a QR code image with a single API.
 
 ## Usage
 
@@ -30,8 +29,7 @@ example("example2"); // Account: example2 - 084841
 
 ## Description
 
-This repository is a clone of the popular authy application used to generate 2FA
-codes.
+This repository allows you to take a QR code image and turn it into a TOTP code.
 
 This project uses:
 
