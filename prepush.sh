@@ -20,7 +20,7 @@ if [[ $run_tests == "true" ]]; then
   while true; do
     read -p "[pre-push hook] Would you like to run the tests before pushing? [y/N]" REPLY
     if [[ $REPLY =~ ^[Yy] ]]; then
-      npm test; break
+      npm run build && npm run test:coverage; break
     else
       break
     fi
