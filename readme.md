@@ -68,7 +68,8 @@ Make sure you have [Node.js](https://nodejs.org/en/) installed on your machine
 #### Tests
 
 - Run the tests `npm test`
-- Run the tests with coverage `npm test:coverage`
+- Run the tests with coverage `npm run test:coverage`
+- Run the tests with mutation testing `npm run test:mutation`
 
 ---
 
