@@ -17,7 +17,9 @@ npm install @thomaschaplin/image-to-totp
 
 ### Example Usage
 
-Find full example [here](https://github.com/thomaschaplin/image-to-totp/blob/master/examples/src/image-to-totp.ts) but see the below code snippet:
+Find full example [here](https://github.com/thomaschaplin/image-to-totp/blob/master/examples/src/image-to-totp.ts) but see the below code snippet
+
+<img src="./src/__tests__/fixtures/2fa.png" alt="example-qr-code" width="100" height="100" />
 
 ```
 src/
