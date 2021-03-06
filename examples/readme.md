@@ -2,7 +2,9 @@
 
 ### Generate a TOTP code from a QR code image
 
-- Run `npx ts-node examples/generate-totp-from-qr-code-image.ts`
+- Run `npm install`
+- Run `npm run build` or `npm run watch`
+- Run `npm start`
 
 Example output:
 
