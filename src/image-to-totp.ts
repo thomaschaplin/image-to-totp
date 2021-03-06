@@ -10,5 +10,7 @@ export const imageToTotp = async (
     parsedQrCode.query.issuer,
     parsedQrCode.query.secret,
   );
-  return totp;
-};
+  return new Promise((resolve) => {
+    resolve(totp)
+  })
+}

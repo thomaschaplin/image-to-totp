@@ -1,6 +1,6 @@
 {
     "name": "@thomaschaplin/image-to-totp",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "image-to-totp converts qr code images to totp codes",
     "main": "build/index.js",
     "files": [
@@ -12,6 +12,7 @@
     "scripts": {
         "test": "jest --runInBand",
         "test:coverage": "jest --runInBand --coverage",
+        "test:mutation": "stryker run",
         "build": "rm -rf ./build && tsc",
         "watch": "rm -rf ./build && tsc --watch"
     },
@@ -38,6 +39,9 @@
     "author": "Thomas Chaplin <thomaschaplin@outlook.com>",
     "license": "MIT",
     "devDependencies": {
+        "@stryker-mutator/core": "^4.4.1",
+        "@stryker-mutator/jest-runner": "^4.4.1",
+        "@stryker-mutator/typescript-checker": "^4.4.1",
         "@types/jest": "^26.0.0",
         "@types/node": "^13.13.45",
         "husky": "^4.3.8",
