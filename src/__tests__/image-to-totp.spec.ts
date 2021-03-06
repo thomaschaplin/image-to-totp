@@ -26,7 +26,7 @@ describe("Generate totp from file", () => {
         "should generate a totp from a image file",
       ],
       () => imageToTotp(`${fixturesFolder}/2fa.png`),
-      { meanUnder: 25 },
+      { meanUnder: 40 },
     );
   });
 });

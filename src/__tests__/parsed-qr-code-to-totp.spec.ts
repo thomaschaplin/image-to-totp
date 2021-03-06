@@ -32,7 +32,7 @@ describe("Generate totp from parsed qr code", () => {
           parsedTotpUri.query.issuer,
           parsedTotpUri.query.secret,
         ),
-      { meanUnder: 0.5 },
+      { meanUnder: 1 },
     );
   });
 });

@@ -32,7 +32,7 @@ describe("Parse QR code", () => {
         "should parse valid totp qr code",
       ],
       async () => await parseQrCode(validTotpQrCode),
-      { meanUnder: 25 },
+      { meanUnder: 40 },
     );
   });
 

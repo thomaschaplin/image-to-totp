@@ -18,7 +18,7 @@ describe("Parse totp uri", () => {
         "should parse totp uri",
       ],
       () => parseTotpUri(uri),
-      { meanUnder: 0.5 },
+      { meanUnder: 1 },
     );
   });
 
