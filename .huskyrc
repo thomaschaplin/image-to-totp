@@ -1,5 +1,6 @@
 {
   "hooks": {
         "pre-push": "./prepush.sh",
+        "pre-commit": "lint-staged"
     }
 }
