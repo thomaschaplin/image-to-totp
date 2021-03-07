@@ -45,7 +45,7 @@
         "@stryker-mutator/core": "^4.4.1",
         "@stryker-mutator/jest-runner": "^4.4.1",
         "@stryker-mutator/typescript-checker": "^4.4.1",
-        "@thomaschaplin/eslint-config": "file:../eslint-config-thomaschaplin",
+        "@thomaschaplin/eslint-config": "^1.0.0",
         "@types/jest": "^26.0.0",
         "@types/node": "^13.13.45",
         "@typescript-eslint/eslint-plugin": "^4.16.1",
