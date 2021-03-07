@@ -1,1 +1,1 @@
-export { imageToTotp } from "./image-to-totp";
+export {imageToTotp} from "./image-to-totp"
