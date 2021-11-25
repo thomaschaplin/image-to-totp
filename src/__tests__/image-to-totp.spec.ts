@@ -23,7 +23,7 @@ describe("Generate totp from file", () => {
         await benchmark.record(
             ["image-to-totp", "should generate a totp from a image file"],
             () => imageToTotp(`${fixturesFolder}/2fa.png`),
-            {meanUnder: 50}
+            {meanUnder: 100}
         )
     })
 })
