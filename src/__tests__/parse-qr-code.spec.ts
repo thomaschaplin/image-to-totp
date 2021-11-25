@@ -29,7 +29,7 @@ describe("Parse QR code", () => {
         await benchmark.record(
             ["parse-qr-code", "should parse valid totp qr code"],
             async () => await parseQrCode(validTotpQrCode),
-            {meanUnder: 40}
+            {meanUnder: 50}
         )
     })
 
